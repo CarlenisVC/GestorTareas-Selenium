@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-wrapper">
+    <div class="container">
+        <header>
+            <h1>Gestor de Tareas</h1>
+            <p>Administra tus actividades fácilmente</p>
+        </header>
+
+        <div class="form-container">
+            <div class="input-group">
+                <label for="taskTitle">Título</label>
+                <input type="text" id="taskTitle" placeholder="Ej: Estudiar programación">
+            </div>
+
+            <div class="input-group">
+                <label for="taskDescription">Descripción</label>
+                <textarea id="taskDescription" rows="3" placeholder="Detalles de la tarea"></textarea>
+            </div>
+
+            <button class="btn btn-primary" id="addBtn">Agregar Tarea</button>
+        </div>
+
+        <ul class="task-list" id="taskList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

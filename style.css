@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 220, 230, 0.85);
+    padding: 35px;
+    border-radius: 26px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+}
+
+#errorMsg {
+    color: red;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', 'Arimo', sans-serif;
+}
+
+/* Fondo con ligero overlay para que el container encaje bien */
+body {
+    min-height: 100vh;
+    background-image: url('fondogt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Centrado real */
+.app-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Container ajustado para pegar con el fondo (glassmorphism suave) */
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 32px;
+
+    background: rgba(255, 220, 230, 0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 50px rgba(0,0,0,0.20),
+        inset 0 0 0 1px rgba(255,255,255,0.45);
+}
+
+
+
+/* CABECERA */
+header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+header h1 {
+    color: #111827;
+    margin-bottom: 6px;
+    font-family: 'Stack Sans Headline', 'Noto Sans', sans-serif;
+}
+
+header p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* FORMULARIO */
+.form-container {
+    background: rgba(255,255,255,0.65);
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.input-group {
+    margin-bottom: 12px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: #374151;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.12);
+    font-size: 14px;
+    background: rgba(255,255,255,0.95);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99,102,241,0.08);
+}
+
+/* BOTÓN */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: rgba(255, 220, 230, 0.78);
+    color: #5a1a2d;
+    border-radius: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    border: 1px solid rgba(255, 180, 195, 0.9);
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: rgba(255, 200, 215, 0.9);
+    box-shadow: 0 8px 20px rgba(255, 180, 195, 0.45);
+    transform: translateY(-2px);
+}
+
+
+/* LISTA */
+.task-list {
+    list-style: none;
+}
+
+.task-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-info strong {
+    color: #111827;
+    font-size: 15px;
+}
+
+.task-info p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.task-actions button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.btn-edit {
+    background: rgba(255, 220, 230, 0.78);
+    color: #5a1a2d;
+}
+
+.btn-delete {
+    background: rgba(255, 220, 230, 0.78);
+    color: #5a1a2d;
+}
